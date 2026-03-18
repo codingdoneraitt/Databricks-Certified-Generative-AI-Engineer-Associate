@@ -15,6 +15,25 @@ Work through the modules in order. Each lab is a self-contained notebook or SQL 
 Every lab maps to one or more exam objectives and touches a specific part of the Databricks UI.
 By the end you will have used every section of the left-hand navigation at least once.
 
+### Copy-paste workflow (recommended)
+
+Each lab notebook includes step-by-step Databricks UI instructions. Follow this pattern:
+
+1. **Open the lab notebook** in this repo (locally or on GitHub/GitLab)
+2. **In Databricks**, click **Workspace** in the left nav → navigate to your folder
+3. **Create a new notebook**: click the **+** button → **Notebook**
+4. **Name it** to match the lab (e.g., `01_workspace_orientation`)
+5. **Set the language** to Python (or SQL for `.sql` labs)
+6. **Copy each code cell** from the lab into the Databricks notebook cells
+7. **Run cells** using `Shift+Enter` (or the play button)
+
+> Each lab tells you exactly which Databricks UI tab to open and what to click.
+> SQL labs (`.sql` files) should be run in the **SQL Editor** instead of a notebook.
+
+### If you get stuck
+
+Check the `solutions/` directory for completed notebooks with full working code.
+
 ---
 
 ## Databricks UI navigation map
