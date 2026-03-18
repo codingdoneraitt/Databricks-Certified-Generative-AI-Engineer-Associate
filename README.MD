@@ -69,6 +69,7 @@ Before starting, get familiar with these menu sections — every one appears in 
 
 ```
 ├── 00_foundations/
+│   ├── 00_aws_setup_cost_guardrails.ipynb   ← START HERE
 │   ├── 01_workspace_orientation.ipynb
 │   ├── 02_unity_catalog_basics.ipynb
 │   └── 03_first_llm_call.ipynb
