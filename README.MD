@@ -96,6 +96,7 @@ Before starting, get familiar with these menu sections — every one appears in 
 │   ├── 02_vector_search_index.ipynb
 │   ├── 03_rag_deployment_pipeline.ipynb
 │   ├── 04_foundation_model_apis.ipynb
+│   ├── 04b_persistent_memory.ipynb
 │   ├── 05_batch_inference_ai_query.sql
 │   ├── 06_cicd_agent_components.ipynb
 │   ├── 07_mcp_servers.ipynb
@@ -299,12 +300,23 @@ Deploy a complete RAG chain as a Model Serving endpoint following the correct se
 chunk → Delta table → Vector Search index → build chain → log with MLflow →
 register in Unity Catalog under **Models** → create endpoint under **Serving** →
 enable inference tables. This sequence is a recurring exam question.
+Control access to resources from model serving endpoints — configure service principals,
+token-based authentication, and GRANT permissions on endpoints and dependent resources.
 
 ### Lab 04-04: Foundation Model API Types
 Understand the two Foundation Model API tiers: pay-per-token (instant, zero configuration,
 ideal for prototyping and variable workloads) vs provisioned throughput (reserved capacity,
 SLA guarantees, HIPAA-compliant, supports fine-tuned models, required for production).
 Practice selecting the right tier for given requirements.
+
+### Lab 04-04b: Persistent Memory and State
+Configure a persistent datastore to store and retrieve intermediate memory and structured
+information. Build Delta-backed conversation memory for multi-turn agents. Implement
+agent state checkpointing so long-running tasks can resume. Understand when to use
+Delta tables vs feature tables for storing structured intermediate results (e.g., extracted
+entities, user preferences, session context). Compare memory patterns: buffer memory
+(recent messages), summary memory (compressed history), and structured memory
+(key-value lookups from Delta/feature tables).
 
 ### Lab 04-05: Batch Inference with ai_query()
 Use the **SQL Editor** to run `ai_query()` against a Delta table of unstructured content.
@@ -445,6 +457,7 @@ you learned the underlying skill — go back and review if needed.
 | Select chain components | 01-03 |
 | Agent Bricks (Knowledge Assistant, Multiagent Supervisor, Information Extraction) | 01-04 |
 | Chunking strategies and trade-offs | 02-02 |
+| Identify needed source documents for a RAG application | 02-01 |
 | Document extraction (pytesseract, pypdf, beautifulsoup4) | 02-01 |
 | Write chunks to Delta Lake / Unity Catalog | 02-03 |
 | Retrieval evaluation metrics | 02-04 |
@@ -459,9 +472,10 @@ you learned the underlying skill — go back and review if needed.
 | Evaluation vs monitoring phases | 03-07, 06-01 |
 | PyFunc chain with pre/post-processing | 04-01 |
 | Vector Search index creation and querying | 04-02 |
-| RAG deployment sequence | 04-03 |
+| RAG deployment sequence and endpoint access control | 04-03 |
 | Foundation Model API types (pay-per-token vs provisioned) | 04-04 |
 | Batch inference with ai_query() | 04-05 |
+| Persistent datastore for memory and structured information | 04-04b |
 | CI/CD best practices (prompts, indexes, environments) | 04-06 |
 | MCP servers (managed / external / custom) | 04-07 |
 | Apps and user-facing interfaces | 04-08 |
