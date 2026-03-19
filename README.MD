@@ -131,7 +131,7 @@ classic clusters and serverless compute.
 
 ### Lab 00-02: Unity Catalog Basics
 Navigate to **Catalog** and understand the three-level namespace: `catalog → schema → table`.
-Create a personal schema under `main` for all lab work (e.g., `main.genai_labs`).
+Create a personal schema under `workspace` for all lab work (e.g., `workspace.genai_labs`).
 Learn the GRANT/REVOKE syntax for permissions. Understand why Unity Catalog is the
 governance layer for both data and AI assets — tables, models, functions, and volumes
 all live here.
@@ -201,7 +201,7 @@ Build the full ingestion pipeline: extract → clean → chunk → write to Delt
 Use the **SQL Editor** with a **SQL Warehouse** to query your chunk table.
 Save and name your queries under **Queries**. Check **Query History** to inspect past executions.
 Enable Change Data Feed on your Delta table — this is required for Vector Search to sync
-automatically. Write the output to `main.genai_labs.document_chunks` and verify in **Catalog**.
+automatically. Write the output to `workspace.genai_labs.document_chunks` and verify in **Catalog**.
 
 ### Lab 02-04: Retrieval Evaluation
 Learn the retrieval metrics required by the exam: Precision@K, Recall@K, MRR, MAP@K,
