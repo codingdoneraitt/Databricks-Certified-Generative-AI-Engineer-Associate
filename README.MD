@@ -4,7 +4,7 @@
 
 ### Hands-On Lab Guide
 
-**36 labs | 8 modules | Every exam objective covered**
+**37 labs | 8 modules | Every exam objective covered**
 
 Pass the [Databricks Certified Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate) exam (March 18, 2026 version) through progressive hands-on labs covering every exam objective.
 
@@ -79,7 +79,8 @@ Databricks-Certified-Generative-AI-Engineer-Associate/
 │   ├── 05_batch_inference_ai_query.sql
 │   ├── 06_cicd_agent_components.ipynb
 │   ├── 07_mcp_servers.ipynb
-│   └── 08_apps_and_interfaces.ipynb
+│   ├── 08_apps_and_interfaces.ipynb
+│   └── 09_code_your_own_agent.ipynb
 │
 ├── 05_governance/                          # PII, licensing, compliance (8%)
 │   ├── 01_pii_masking_guardrails.ipynb
@@ -205,6 +206,7 @@ Deploy your RAG application end-to-end on Databricks.
 | **04-06: CI/CD** | MLflow Prompt Registry; component tests; dev -> staging -> prod environment promotion |
 | **04-07: MCP Servers** | Managed (UC functions), external (Slack/GitHub), custom; governed tool access |
 | **04-08: Apps & Interfaces** | Databricks Apps, Slack, Teams, REST API; conversational wrappers |
+| **04-09: Code Your Own Agent** | Agent app templates; OpenAI Agents SDK; MLflow AgentServer; `databricks apps deploy`; local dev with `uv`; framework comparison |
 
 ---
 
@@ -326,6 +328,7 @@ Build a complete, production-grade customer support agent for "Fabrikam Industri
 | CI/CD best practices (prompts, indexes, environments) | 04-06 |
 | MCP servers (managed / external / custom) | 04-07 |
 | Apps and user-facing interfaces | 04-08 |
+| Code Your Own Agent (agent templates, MLflow AgentServer, `databricks apps deploy`) | 04-09 |
 
 ### Section 5 — Governance (8%)
 
